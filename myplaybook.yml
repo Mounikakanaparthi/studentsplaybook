@@ -13,3 +13,8 @@
     apt:
        name: tree
        state: present
+
+  - name: i want to install ubuntu on ansible nodes
+    apt:
+      name: wget
+      state: present  
