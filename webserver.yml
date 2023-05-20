@@ -14,6 +14,15 @@
        state: started
     when: ansible_os_family =="Debian"
 
+  - name: i want to install webserver in  "RedHat" nodes
+    ansible.builtin.yum:
+     name: httpd
+     state: latest
+    when: ansible_os_family =="RedHat"
+  - name: i want to install webserver on Redhat nodes
+    service:
+       name: httpd
+       state: started
+    when: ansible_os_family =="RedHat"   
  #    "RedHat" =="Debian"
  #    "Debian" =="Debian"
- 
