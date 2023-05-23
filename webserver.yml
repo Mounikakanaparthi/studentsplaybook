@@ -16,13 +16,12 @@
 
   - name: i want to install webserver in  "RedHat" nodes
     ansible.builtin.dnf:
-     name: "{{mywebserveronRedHat}}"
+     name: "{{mywebserveronredhat}}"
      state: latest
     when: ansible_os_family =="RedHat"
   - name: i want to install webserver on Redhat nodes
     service:
-  
-       name: "{{mywebserveronRedHat}}"
+       name: "{{mywebserveronredhat}}"
        state: started
     when: ansible_os_family =="RedHat"   
  #    "RedHat" =="Debian"
