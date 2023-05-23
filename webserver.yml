@@ -1,5 +1,5 @@
 ---
-- hosts: myappserver
+- hosts: 172.31.81.130
   become: yes
   tasks:
   - name: i want to install webserver on ubuntu nodes
