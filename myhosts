@@ -1,4 +1,4 @@
-[mywebserrvers]
+[mywebservers]
 172.31.80.135
 172.31.81.130
 
@@ -15,8 +15,8 @@
 
 
 
-[mywebserrvers:vars]
-
+[mywebservers:vars]
+myvar01= abc123
 mywebpackonubuntu= apache2
 mywebpackonredhat= httpd
 
