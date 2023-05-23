@@ -15,7 +15,7 @@
 
 
 
-[mywebserver.vars]
+[mywebserver:vars]
 
 mywebpackonubuntu= apache2
 mywebpackonredhat= httpd
