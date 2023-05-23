@@ -16,8 +16,8 @@
 
   - name: i want to install webserver in  "RedHat" nodes
     ansible.builtin.dnf:
-     name: "{{mywebserveronredhat}}"
-     state: latest
+       name: "{{mywebserveronredhat}}"
+       state: present
     when: ansible_os_family =="RedHat"
   - name: i want to install webserver on Redhat nodes
     service:
