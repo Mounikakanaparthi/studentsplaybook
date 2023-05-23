@@ -15,7 +15,10 @@
 
 
 
+[mywebserver.vars]
 
+mywebserveronubuntu=apache2
+mywebserveronRedHat=httpd
 
 
 
