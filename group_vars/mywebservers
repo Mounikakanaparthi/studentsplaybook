@@ -2,3 +2,6 @@
 myvar01: abc123
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
+
+installjavaonubuntu: openjdk-8-jdk
+installjavaonredhat: java-1.8.0-amazon-corretto-devel
