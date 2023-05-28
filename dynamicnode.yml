@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  -  name: create ansible nodes
+      ec2:
+      key_name: april28
+      instance_type: t2.micro
+      image: ami-0120b32c383725482
+      wait: yes
+      group: sg-0496bcee568467aa0
+      count: 2
+      vpc_subnet_id: subnet-0277ba505fae9dd7a
+      assign_public_ip: yes 
+      region: us-east-2
+      instance_tags:
+        Name: ansiblenodes
